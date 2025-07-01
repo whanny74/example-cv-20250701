@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍길동 | CV</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <a href="#" class="nav-title" data-lang-key="name">홍길동</a>
+            <nav>
+                <ul class="nav-menu">
+                    </ul>
+                <div class="lang-toggle">
+                    <button data-lang="ko" class="active">KOR</button>
+                    <span>/</span>
+                    <button data-lang="en">ENG</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside id="summary">
+            <div class="summary-content">
+                <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h1 class="profile-name" data-lang-key="name">홍길동</h1>
+                <p class="profile-tagline" data-lang-key="tagline">열정적인 풀스택 소프트웨어 엔지니어</p>
+                
+                <div class="contact-info">
+                    </div>
+
+                <div class="keywords">
+                    <h3 data-lang-key="keywordsTitle">주요 키워드</h3>
+                    <div class="tags" id="keyword-tags">
+                        </div>
+                </div>
+
+                <div class="qualifications-summary">
+                    <h3 data-lang-key="summaryTitle">주요 자격 요약</h3>
+                    <p data-lang-key="summaryContent">정보처리기사, AWS Certified Developer 자격 보유. 다수의 해커톤 수상 경력.</p>
+                </div>
+
+                <div class="external-links">
+                    </div>
+
+                <button class="cta-button" id="contact-cta" data-lang-key="contactButton">CONTACT ME</button>
+            </div>
+        </aside>
+
+        <div id="contents">
+            <section id="introduction" class="content-section"></section>
+            <section id="education" class="content-section"></section>
+            <section id="experience" class="content-section"></section>
+            <section id="projects" class="content-section"></section>
+            <section id="skills" class="content-section"></section>
+            <section id="research" class="content-section"></section>
+            <section id="awards" class="content-section"></section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p data-lang-key="footerText">© 2025 홍길동. All Rights Reserved.</p>
+    </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 data-lang-key="contactModalTitle">문의하기</h2>
+            <form id="contact-form">
+                <label for="recruiter-name" data-lang-key="formName">이름</label>
+                <input type="text" id="recruiter-name" name="name" required>
+
+                <label for="recruiter-email" data-lang-key="formEmail">이메일</label>
+                <input type="email" id="recruiter-email" name="email" required>
+
+                <label for="recruiter-company" data-lang-key="formCompany">회사</label>
+                <input type="text" id="recruiter-company" name="company">
+
+                <label for="message" data-lang-key="formMessage">메시지</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button" data-lang-key="formSubmit">보내기</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content large">
+            <span class="close-button">&times;</span>
+            <div id="project-modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
